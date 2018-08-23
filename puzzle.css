@@ -1,0 +1,37 @@
+* {box-sizing: border-box}
+html, body {
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	overflow: hidden;
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #000;
+	color: #fff;
+	font-size: 1.25em;
+	font-family: sans-serif;
+	image-rendering: optimizeSpeed;
+}
+#viewport, #viewport > * {
+	width: 100vh;
+	height: 100vh;
+}
+#viewport {
+	outline: 1px solid #048;
+}
+#viewport > * {
+	position: absolute;
+}
+canvas {
+	text-align: center;
+}
+
+@media (orientation: portrait) {
+	#viewport, #viewport > * {
+		width: 100vw;
+		height: 100vw;
+	}
+}
