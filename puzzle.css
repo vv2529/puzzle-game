@@ -1,5 +1,8 @@
-* {box-sizing: border-box}
-html, body {
+* {
+	box-sizing: border-box;
+}
+html,
+body {
 	width: 100vw;
 	height: 100vh;
 	margin: 0;
@@ -15,9 +18,10 @@ body {
 	font-family: sans-serif;
 	image-rendering: optimizeSpeed;
 }
-#viewport, #viewport > * {
-	width: 100vh;
-	height: 100vh;
+#viewport,
+#viewport > * {
+	width: 100vmin;
+	height: 100vmin;
 }
 #viewport {
 	outline: 1px solid #048;
@@ -27,11 +31,4 @@ body {
 }
 canvas {
 	text-align: center;
-}
-
-@media (orientation: portrait) {
-	#viewport, #viewport > * {
-		width: 100vw;
-		height: 100vw;
-	}
 }
