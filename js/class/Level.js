@@ -100,7 +100,7 @@ export default class Level {
 		let imgload = [];
 		for (let i in this.img) {
 			let img = new Image();
-			img.src = `/assets/${this.img[i]}.png`;
+			img.src = `assets/${this.img[i]}.png`;
 			this.img[i] = img;
 			imgload.push(
 				new Promise((resolve, reject) => {

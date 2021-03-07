@@ -16,6 +16,9 @@ const game = new Game(
 
 loadScript('js/function.js', () => {
 	onFullLoad(() => {
-		game.start('/level/level-test.json');
+		game.start(
+			location.pathname.slice(0, location.pathname.lastIndexOf('/')) +
+			'/level/level-test.json'
+		);
 	});
 });
